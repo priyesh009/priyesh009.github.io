@@ -1,1 +1,216 @@
-## Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyesh Ghoradkar | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #1f1f1f;
+      --accent: #0070f3;
+      --card-bg: #fff;
+      --border: #eaeaea;
+    }
+
+    body.dark-mode {
+      --bg: #1a1a1a;
+      --text: #f0f0f0;
+      --card-bg: #222;
+      --border: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      color: var(--text);
+    }
+
+    .toggle-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-links {
+      margin-top: 1rem;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .contact-links a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="toggle-button" onclick="toggleDarkMode()">🌓 Dark Mode</button>
+    <h1>Priyesh Ghoradkar</h1>
+    <p>Data Scientist | Data Engineer | AI Enthusiast</p>
+  </header>
+
+  <section class="about container">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I'm a data scientist with a passion for transforming raw data into actionable insights.
+        My work includes machine learning, NLP, dashboards, and statistical modeling. I enjoy building real-world solutions using Python, AI tools, and clear storytelling.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects container">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project"><h3>1. Customer Churn Prediction</h3><p>Predicting customer churn with XGBoost.</p><a href="https://www.linkedin.com/in/priyeshg">View →</a></div>
+      <div class="project"><h3>2. NLP: Sentiment Analysis</h3><p>Analyzing product sentiment using BERT.</p><a href="#">View →</a></div>
+      <div class="project"><h3>3. COVID-19 Dashboard</h3><p>Interactive global COVID-19 trends.</p><a href="#">View →</a></div>
+      <div class="project"><h3>4. Recommendation System</h3><p>Movie recommendations using ML models.</p><a href="#">View →</a></div>
+      <div class="project"><h3>5. Credit Risk Analysis</h3><p>Risk modeling using decision trees.</p><a href="#">View →</a></div>
+      <div class="project"><h3>6. Image Classification</h3><p>Classifying medical images with CNN.</p><a href="#">View →</a></div>
+      <div class="project"><h3>8. Resume Parser</h3><p>Structured NLP resume extractor.</p><a href="#">View →</a></div>
+      <div class="project"><h3>9. A/B Testing Framework</h3><p>Experiment design using Python & statsmodels.</p><a href="#">View →</a></div>
+      <div class="project"><h3>10. Web Scraping Toolkit</h3><p>eCommerce scraper using Selenium & BeautifulSoup.</p><a href="#">View →</a></div>
+    </div>
+  </section>
+
+  <section class="contact container">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>You can reach me via email or LinkedIn:</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">📧 your.email@example.com</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank">🔗 LinkedIn Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Priyesh Ghoradkar — All rights reserved.
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
