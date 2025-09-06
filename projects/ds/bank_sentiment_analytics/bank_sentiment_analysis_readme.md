@@ -171,16 +171,6 @@ graph TD
 - **ML Frameworks**: scikit-learn, PySpark MLlib
 - **Cloud Platform**: AWS (Lambda, S3, Glue, SageMaker)
 
----
-
-## 🚀 Getting Started
-
-1. **Clone Repository**: `git clone [repository-url]`
-2. **AWS Setup**: Configure AWS credentials and services
-3. **Install Dependencies**: `pip install -r requirements.txt`
-4. **Configure Parameters**: Set bank symbols and date ranges
-5. **Deploy Pipeline**: Execute deployment scripts
-6. **Monitor Results**: Access SageMaker notebooks for analysis
 
 ---
 
