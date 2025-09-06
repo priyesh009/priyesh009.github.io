@@ -9,7 +9,7 @@ This project develops a comprehensive data pipeline that leverages Twitter senti
 
 ### Key Achievements
 - Built end-to-end AWS cloud pipeline for real-time data processing
-- Achieved **99.5% accuracy** (R² = 0.995) with Random Forest Regressor
+<!-- - Achieved **99.5% accuracy** (R² = 0.995) with Random Forest Regressor -->
 - Processed 14+ months of historical data with automated daily updates
 - Integrated multiple data sources (Twitter API, Yahoo Finance)
 
@@ -58,7 +58,7 @@ The project addresses five key challenges:
 
 ---
 
-## 🤖 Machine Learning Models
+<!-- ## 🤖 Machine Learning Models
 
 Implemented and compared six different approaches:
 
@@ -71,14 +71,14 @@ Implemented and compared six different approaches:
 | Gradient Boosting | PySpark ML | 24,010.78 | 154.95 | -0.36 |
 | Support Vector Regression | Pandas | 12,677 | 112.6 | -2.66 |
 
----
+--- -->
 
 ## 📈 Key Results & Insights
 
-### Model Performance
+<!-- ### Model Performance
 - **Best Performer**: Linear Regression with Pandas (R² = 1.0)
 - **Second Best**: Random Forest with Pandas (R² = 0.995)
-- **Framework Impact**: Pandas-based models significantly outperformed PySpark ML implementations
+- **Framework Impact**: Pandas-based models significantly outperformed PySpark ML implementations -->
 
 ### Sentiment-Stock Price Correlation
 - Strong correlation observed between negative sentiment spikes and stock price declines
