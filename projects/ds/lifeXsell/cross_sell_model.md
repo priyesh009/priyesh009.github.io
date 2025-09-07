@@ -87,16 +87,18 @@ E --> F[Business Deployment]
 - **Visualization**: Matplotlib, Seaborn
 - **Documentation**: Markdown, Jupyter Notebooks
 
+## Data and Notebook path
+#### currDir/code
 ---
 
-## 📂 Repository Structure
+<!-- ## 📂 Repository Structure
 ```
 ├── data/            # Sample synthetic datasets (no PII)
 ├── notebooks/       # EDA and modeling
 ├── src/             # Data prep & modeling scripts
 ├── results/         # Model outputs, plots
 └── README.md        # Project documentation
-```
+``` -->
 
 ---
 
