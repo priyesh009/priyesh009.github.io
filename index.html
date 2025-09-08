@@ -10,14 +10,14 @@
       --bg: #f9f9f9;
       --text: #1f1f1f;
       --accent: #0070f3;
-      --card-bg: #fff;
+      --card-bg: rgba(255, 255, 255, 0.3);
       --border: #eaeaea;
     }
 
     body.dark-mode {
       --bg: #1a1a1a;
       --text: #f0f0f0;
-      --card-bg: #222;
+      --card-bg: rgba(34, 34, 34, 0.3);
       --border: #333;
     }
 
@@ -34,6 +34,21 @@
       line-height: 1.6;
       padding: 2rem;
       transition: background 0.3s ease, color 0.3s ease;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Background image with subtle opacity */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('img/public_speaking_iupui.jpeg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;  /* very subtle */
+      z-index: -1;
     }
 
     header {
@@ -82,6 +97,7 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.05);
       border: 1px solid var(--border);
       padding: 2rem;
+      backdrop-filter: blur(10px); /* glass effect */
     }
 
     h2 {
@@ -106,6 +122,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       border: 1px solid var(--border);
       background: var(--card-bg);
+      backdrop-filter: blur(10px);
       transition: transform 0.2s ease;
     }
 
@@ -186,8 +203,6 @@ I’ve delivered solutions across insurance, pharma, manufacturing, and IoT. Bas
       <div class="project"><h3>5. Lead prediction model</h3><p>This project focuses on building a Lead Prediction Model for home insurance.(Real world project).</p><a href="https://github.com/priyesh009/priyesh009.github.io/tree/master/projects/ds/home_insurance_lead_prediction">View →</a></div>
       <div class="project"><h3>6. Understanding distributions </h3><p>Understanding commnon probablity distributions used in insurance indsutry</p><a href="https://priyeshghoradkar.streamlit.app/">View →</a></div>
       <div class="project"><h3>7. Orchestration using Airflow</h3><p>Using Airflow Dags to orchestrate ETL jobs (Real world project).</p><a href="https://github.com/priyesh009/aws-data-project/tree/master/Airflow_Project">View →</a></div>
-      <!-- <div class="project"><h3>9. A/B Testing Framework</h3><p>Experiment design using Python & statsmodels.</p><a href="#">View →</a></div>
-      <div class="project"><h3>10. Generalized Linear Models for Insurance Pricing</h3><p>eCommerce scraper using Selenium & BeautifulSoup.</p><a href="#">View →</a></div> -->
     </div>
   </section>
 
