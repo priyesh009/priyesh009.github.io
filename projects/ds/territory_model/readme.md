@@ -42,6 +42,9 @@ The goal was to enhance credibility and smoothness of territory factors while al
 - Created **continuous spatial gradients** of risk instead of abrupt ZIP-based jumps.  
 - Produced stable, interpretable factors that can be integrated into the **GLM pricing algorithm**.  
 
+## Hex Plot
+![Plot](pic.jpeg)
+
 ## Tools & Technologies
 - **Python (Pandas, NumPy, H3, Geopandas, Shapely, Scikit-learn)**  
 - **Matplotlib, Seaborn, Folium** for visualization  
